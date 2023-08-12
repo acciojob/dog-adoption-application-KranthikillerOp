@@ -1,16 +1,36 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Dog Adoption Application</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<form action="" method="post">
+    <h1>Dog Adoption Application</h1>
+
+    <input type="text" name="name" placeholder="Your name">
+    <input type="text" name="phone_number" placeholder="Your phone number">
+    <input type="text" name="address" placeholder="Your address">
+
+    <input type="checkbox" name="have_lived_with_dog" value="true"> Have you ever lived with a dog before?
+
+    <select name="preferred_breeds" multiple="multiple">
+        <option value="Labrador Retriever">Labrador Retriever</option>
+        <option value="Golden Retriever">Golden Retriever</option>
+        <option value="German Shepherd">German Shepherd</option>
+        <option value="Poodle">Poodle</option>
+        <option value="Shih Tzu">Shih Tzu</option>
+        <option value="Yorkshire Terrier">Yorkshire Terrier</option>
+    </select>
+
+    <textarea name="about_you" placeholder="Tell us a little bit about yourself and your lifestyle. What kind of dog are you looking for?"></textarea>
+
+    <input type="submit" value="Submit">
+</form>
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
