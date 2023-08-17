@@ -1,41 +1,68 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-  <title>Dog Adoption Application</title>
-  <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<!-- the entire body must be written by student -->
+<form>
+	<input type ="text" id="name" placeholder="Name"> <br>
+	<input type ="text" id="phone" placeholder="Phone Number"><br>
+	<input type ="text" id="address" placeholder="Address"><br>
+	<input type ="checkbox" id="checkbox" value = "Have you ever lived with a Dog before?">Have you ever lived with a Dog before?
+	
+		<select id="multiSelect" multiple>
+		  <option value="goldenRetriever">Golden Retriever</option>
+		  <option value="poodle">Poodle</option>
+		  <option value="germanShepherd">German Shepherd</option>
+		  <option value="labradorRetriever">Labrador Retriever</option>
+		  <option value="bulldog">Bulldog</option>
+		</select>
+		<br>
+	<input type ="submit" value="Submit" id="submit">
+</form>	
+    <script type="text/javascript" src="./script.js">
+</script>
+
+</body>
+
+</html>
+<!-- 2nd approach------------------------- -->
+<!-- <html>
+<head>
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Dog Adoption Application</h1>
-  <form action="/submit" method="post">
-    <div class="form-group">
-      <label for="name">Name</label>
-      <input type="text" name="name" id="name" placeholder="Your name">
-    </div>
-    <div class="form-group">
-      <label for="phone">Phone Number</label>
-      <input type="text" name="phone" id="phone" placeholder="Your phone number">
-    </div>
-    <div class="form-group">
-      <label for="address">Address</label>
-      <input type="text" name="address" id="address" placeholder="Your address">
-    </div>
-    <div class="form-group">
-      <label for="have_lived_with_dog">Have you ever lived with a dog before?</label>
-      <input type="checkbox" name="have_lived_with_dog" id="have_lived_with_dog">
-    </div>
-    <div class="form-group">
-      <label for="preferred_breeds">Please select your preferred breeds</label>
-      <select name="preferred_breeds" id="preferred_breeds" multiple>
-        <option value="Golden Retriever">Golden Retriever</option>
-        <option value="Labrador Retriever">Labrador Retriever</option>
-        <option value="German Shepherd">German Shepherd</option>
-        <option value="Poodle">Poodle</option>
-        <option value="Beagle">Beagle</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <input type="submit" value="Submit">
-    </div>
-  </form>
+	
+	<form>
+		
+		<label for="name">Name</label>
+		<input type="text" placeholder="Name" id="name" name="name">
+	
+		<label for="phone">Phone Number</label>
+		<input type="text" placeholder="Phone Number" id="phone" name="phone">
+	
+		<label for="address">Address</label>
+		<input type="text" placeholder="Address" id="address" name="address">
+		<label for="checkbox">Have you ever lived with a Dog before?</label>
+		<input type="checkbox" value="Have you ever lived with a Dog before?" id="checkbox">
+	<select id="multiSelect" multiple>
+  <option value="goldenRetriever">Golden Retriever</option>
+  <option value="poodle">Poodle</option>
+  <option value="germanShepherd">German Shepherd</option>
+  <option value="labradorRetriever">Labrador Retriever</option>
+  <option value="bulldog">Bulldog</option>
+</select>
+			
+			
+		<button value="Submit" id="submit">Submit</button>
+	</form>
+	
+	
+    <script type="text/javascript" src="./script.js">
+</script>
 </body>
-</html>
+</html> -->
